@@ -98,6 +98,9 @@ Prenez les deux codes suivants :
 <p>Nous avons passé le commentaire.</p>
 </body>
 </html>
+````
+
+````html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -320,7 +323,7 @@ la version à partir de laquelle un navigateur va supporter cette balise
 Exemple : Mettre en page un texte de théâtre
 --------------------------------------------
 
-Téléchargez le document [La Jalousie du Barbouillé](exercices/jalousie_barbouillé.txt) sur LÉA. Nous allons utiliser ce
+Téléchargez le document [La Jalousie du Barbouillé](exercices/jalousie_barbouillé.txt). Nous allons utiliser ce
 fichier texte pour créer un page web des deux premières scènes de la pièce de Molière. Pour y parvenir, voici notre mise
 en page :
 
@@ -745,7 +748,7 @@ y a deux solutions :
 
 Prenez un exemple, nos serveurs a comme nom de domaine `cegepdrummond.qc.ca` . Ainsi, pour y accéder, il suffit
 d'indiquer le chemin suivant :
-[https://cegepdrummond.qc.ca](https://cegepdrummond.qc.ca).
+[https://cegepdrummond.ca](https://cegepdrummond.ca).
 
 
 Petit exemple d'un chemin web
