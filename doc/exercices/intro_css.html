@@ -1,0 +1,340 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Introduction au CSS</title>
+</head>
+<body>
+<div>
+    <h1>Introduction au CSS</h1>
+    <h3>Auteur: Denis Rinfret</h3>
+    <h4>Basé sur <a href="https://www.w3schools.com/css/default.asp">https://www.w3schools.com/css/default.asp</a> &amp;
+        <a href="https://www.w3schools.com/bootstrap4/default.asp">https://www.w3schools.com/bootstrap4/default.asp</a>
+    </h4>
+    <ul>
+        <li>Le HTML décrit la structure d'un document, tandis que le CSS décrit comment il devrait être affiché</li>
+        <li>CSS est un langage qui décrit le style d'un document HTML</li>
+        <li>CSS décrit comment un document HTML devrait être affiché</li>
+    </ul>
+    <h3>Qu'est-ce que le CSS ?</h3>
+    <ul>
+        <li>CSS veut dire <em>Cascading Style Sheets</em></li>
+        <li>CSS décrit comment les éléments du HTML doivent être affichés sur un écran, sur papier, ou sous d'autre
+            formes
+        </li>
+        <li>CSS sauve beaucoup de travail. Il peut contrôler l'agencement de plusieurs pages web d'un seul coup</li>
+        <li>Les feuilles de style externes sont conservées dans des fichiers CSS</li>
+    </ul>
+    <h3>Pourquoi utiliser le CSS ?</h3>
+    <ul>
+        <li>Le CSS est utilisé pour définier des styles pour nos pages web, incluant le design, l'agencement et les
+            variations dans l'affichage sur des appareils et écrans différents.
+        </li>
+    </ul>
+    <h3>Le CSS a résolu de gros problèmes</h3>
+    <ul>
+        <li><p>Le HTML n'a <strong>jamais</strong> été supposé contenir des balises pour formatter des pages web</p>
+        </li>
+        <li><p>Le HTML a été créé pour décrire le contenu d'une page web, comme par exemple :</p></li>
+    </ul>
+    <xmp>
+        <h1>This is a heading</h1>
+        <p>This is a paragraph.</p>
+    </xmp>
+    <ul>
+        <li>Quand une balise comme <code>&lt;font&gt;</code> et des attributs de couleurs ont été ajoutés à la
+            spécification du HTML 3.2, un cauchemar a débuté pour les programmeurs
+        </li>
+        <li>Le développement de grands sites web, dans lesquels les informations sur les polices ont été ajoutés à
+            chaque page, est devenu un processus long et complexe
+        </li>
+        <li>Pour résoudre ce problème, le <em>World Wide Web Consortium (W3C)</em> a créé le CSS.</li>
+        <li>Le CSS a enlevé le formatage de style des pages HTML</li>
+    </ul>
+    <h3>Le CSS sauve beaucoup de temps !</h3>
+    <ul>
+        <li>Les définitions de style sont normalement conservées dans des fichiers <code>. css</code> externes.</li>
+        <li>Avec une feuille de style externe, vous pouvez changer le <em>look</em> d'un site web entier en modifiant
+            seulement un fichier <code>.css</code></li>
+    </ul>
+    <h3>La syntaxe du CSS</h3>
+    <ul>
+        <li>Un ensemble de règles CSS est formé d'un sélecteur et d'un bloc de déclarations :</li>
+    </ul>
+    <p><img src="intro_css/css_selector.gif" alt="CSS Selector"></p>
+    <ul>
+        <li>Le sélecteur pointe vers l'élément HTML que vous voulez styliser</li>
+        <li>Le bloc de déclarations contient une ou plusieurs déclarations séparées par des point-virgules
+            <code>;</code></li>
+        <li>Chaque déclaration comprend le nom d'une propriété CSS et une valeur, séparés par un deux-points
+            <code>:</code></li>
+        <li>Une déclaration CSS se termine toujours par un point-virgule, et les blocs de déclarations sont entourés par
+            des accolades <code>{&nbsp;}</code></li>
+    </ul>
+    <h4>Exemple 1: <code>ex1.html</code></h4>
+    <ul>
+        <li>Balise <code>&lt;style&gt;</code>: déclarations CSS incluses dans un fichier HTML</li>
+        <li><code>&lt;style&gt;</code> devrait être dans la balise <code>&lt;head&gt;</code></li>
+        <li>Ceci est appelé une <em>feuille de style interne</em></li>
+        <li>Pour les exemples plus longs et pour les sites web professionnels, il est préférable d'utiliser des feuilles
+            de style externes
+        </li>
+        <li>2 sélecteurs de balise : <code>h1</code> et <code>p</code>
+            <ul>
+                <li>doit appliquer les déclarations à tous les <code>&lt;h1&gt;</code> et les <code>&lt;p&gt;</code>
+                    dans le document
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <pre>ex1.html</pre>
+    <h3>Sélecteurs CSS</h3>
+    <ul>
+        <li><p><strong><em>Sélecteur de balise</em></strong>: pour sélectionner toutes les balises d'un certain type
+            (par exemple <code>&lt;h1&gt;</code>), écrivez le nom de la balise sans les <code>&lt;&gt;</code> comme
+            sélecteur (comme dans l'exemple précédent)</p></li>
+        <li><p><strong><em>Sélecteur d'identifiant</em></strong>: pour sélectionner une balise spécifique par ID,
+            écrivez l'id précédé d'un dièse <code>#</code></p>
+            <ul>
+                <li>si un élément une balise a été défini avec un id comme ceci : <code>id="top"</code></li>
+                <li>utilisez le sélecteur <code>#top</code> pour sélectionner précisément cette balise</li>
+            </ul>
+        </li>
+    </ul>
+    <h4>Exemple2: <code>ex2.html</code></h4>
+    <p><img src="intro_css/css_ex2.png" alt="CSS Exemple 2"></p>
+    <pre>ex2.html</pre>
+    <ul>
+        <li><p>le sélecteur <code>p</code> sélectionne tous les paragraphes</p></li>
+        <li><p><code>#second</code> sélectionne seulement la balise avec <code>id="second"</code>, dans ce cas le
+            deuxième paragraphe</p></li>
+        <li><p>Notez que les IDs sont uniques dans un document HTML, donc seulement une seule balise peut avoir un ID
+            spécifique</p></li>
+        <li><p>Par conséquent, un sélecteur d'ID peut correspondre à seulement une balise (si elle existe)</p></li>
+        <li><p><strong><em>Sélecteur de classe</em></strong> : pour sélectionner les balises d'une classe spécifique
+            (balises avec l'attribut <code>class</code> égal au nom d'une certaine classe, par exemple <code>class="important"</code>),
+            utilisez le sélecteur <code>.important</code></p></li>
+        <li><p><strong><em>Sélecteur classe-élément</em></strong> : pour sélectionner des balises d'une classe
+            spécifique, combinez les sélecteurs de classe et de balise :</p>
+            <ul>
+                <li>par exemple, pour sélectionner tous les paragraphes de la classe <code>important</code>, utilisez le
+                    selecteur <code>p.important</code></li>
+            </ul>
+        </li>
+    </ul>
+    <h4>Exemple 3: <code>ex3.html</code></h4>
+    <p><img src="intro_css/css_ex3.png" alt="CSS Exemple 3"></p>
+    <pre>ex3.html</pre>
+    <ul>
+        <li><p><code>p</code> correspond à tous les paragraphes</p></li>
+        <li><p><code>.important</code> correspond à toutes les balises avec <code>class="important"</code></p>
+            <ul>
+                <li>dans ce cas-ci, le <code>&lt;h1&gt;</code> et le deuxième <code>&lt;p&gt;</code></li>
+            </ul>
+        </li>
+        <li><p><code>p.important</code> correspond à tous les paragraphes avec <code>class="important"</code></p>
+            <ul>
+                <li>dans ce cas-ci, seulement le deuxième <code>&lt;p&gt;</code></li>
+            </ul>
+        </li>
+        <li><p><strong><em>Sélecteur de groupe</em></strong>: pour sélectionner plusieurs balises différentes, séparez
+            les différentes balises avec des virgules</p>
+            <ul>
+                <li>par exemple, pour sélectionner plusieurs niveaux de titres, tels que <code>h1</code>,
+                    <code>h2</code> et <code>h3</code>, utilisez le sélecteur <code>h1, h2, h3</code></li>
+                <li>ceci peut aider à éviter de répéter les mêmes déclarations pour plusieurs balises différentes</li>
+            </ul>
+        </li>
+    </ul>
+    <h4>Exemple 4: <code>ex4.html</code></h4>
+    <p><img src="intro_css/css_ex4.png" alt="CSS Exemple 4"></p>
+    <h3>Feuilles de style externes</h3>
+    <ul>
+        <li><p>Dans les projets plus grands, quand on doit appliquer la même feuille de style sur plusieurs documents
+            HTML, ou quand la feuille de style devient trop grande, il est préférable de placer la feuille de style dans
+            un <em>fichier externe</em></p></li>
+        <li><p>À la place d'utiliser la balise <code>&lt;style&gt;</code> dans le <code>&lt;head&gt;</code>, on doit
+            utiliser la balise <code>&lt;link&gt;</code></p>
+            <p><code>&lt;link rel="stylesheet" type="text/css" href="ex5.css"&gt;</code></p></li>
+        <li><p>The contents of the external stylesheet, in this case <code>ex5.css</code>, is identical to the content
+            of the <code>&lt;style&gt;</code> element when using the internal stylesheet</p></li>
+    </ul>
+    <h4>Exemple 5: <code>ex5.html</code></h4>
+    <p><img src="intro_css/css_ex5.png" alt="CSS Exemple 5"></p>
+    <pre>ex5.html</pre>
+    <h4>Fichier : <code>ex5.css</code></h4>
+    <pre>ex5.css</pre>
+    <h3>Le modèle de boîtes du CSS</h3>
+    <ul>
+        <li>Toutes les balises HTML peuvent être considérées comme des boîtes. Dans le CSS, l'expression <em>"modèle de
+            boîtes"</em> (<em>"box model"</em> en anglais) est utilisée en parlant de design et d'agencement
+        </li>
+        <li>Le modèle de boîtes du CSS est essentiellement une boîte qui entoure chaque balise HTML</li>
+    </ul>
+    <p><img src="intro_css/box_model.png" alt="CSS Box Model"></p>
+    <ul>
+        <li><strong>Content</strong> (Contenu) : le contenu de la boîte, dans laquelle le texte et les images
+            apparaissent
+        </li>
+        <li><strong>Padding</strong> (Rembourrage) : espace transparent autour du contenu</li>
+        <li><strong>Border</strong> (Bordure) : une bordure qui entoure le contenu et le rembourrage</li>
+        <li><strong>Margin</strong> (Marge) : espace transparent qui entoure la bordure</li>
+    </ul>
+    <h4>Exemple 6: <code>ex6.html</code></h4>
+    <ul>
+        <li>La classe <code>hidden</code> peut être utilisée pour cacher certaines balises
+            <ul>
+                <li>elle va être expliquée plus en détails un peu plus loin</li>
+            </ul>
+        </li>
+    </ul>
+    <p><img src="intro_css/css_ex6.png"
+            alt="CSS Exemple 6"></p>
+    <pre>ex6.html</pre>
+    <h4>Fichier <code>ex6.css</code></h4>
+    <pre>ex6.css</pre>
+    <h3>La propriété <code>display</code></h3>
+    <ul>
+        <li>La propriété <code>display</code> spécifie si, ou comment, la balise est affichée</li>
+        <li>Chaque balise HTML a une valeur de <code>display</code> par défaut selon son type de balise</li>
+        <li>La valeur par défaut de la plupart des balises est soit <code>block</code>, soit <code>inline</code></li>
+    </ul>
+    <h3>Balises de bloc (<code>block</code>)</h3>
+    <ul>
+        <li><p>Une balise de bloc est une balise qui commence toujours sur une nouvelle ligne et qui utilise toute la
+            largeur disponible</p></li>
+        <li><p>Exemples de balise de bloc :</p>
+            <ul>
+                <li><code>&lt;div&gt;</code></li>
+                <li><code>&lt;h1&gt;</code> à <code>&lt;h6&gt;</code></li>
+                <li><code>&lt;p&gt;</code></li>
+                <li><code>&lt;form&gt;</code></li>
+            </ul>
+        </li>
+    </ul>
+    <h3>Balises en-ligne (<code>inline</code>)</h3>
+    <ul>
+        <li><p>Une balise en-ligne ne commence pas toujours sur une nouvelle ligne et utilise seulement la largeur
+            nécessaire</p></li>
+        <li><p>Exemples de balise en-ligne :</p>
+            <ul>
+                <li><code>&lt;span&gt;</code></li>
+                <li><code>&lt;a&gt;</code></li>
+                <li><code>&lt;img&gt;</code></li>
+            </ul>
+        </li>
+    </ul>
+    <h3>Cacher une balise</h3>
+    <h4><code>display: none</code> ou <code>visibility: hidden</code> ?</h4>
+    <ul>
+        <li>Cacher une balise peut être fait en donnant la valeur <code>none</code> à la propriété <code>display</code>
+            (<em>affichage = rien</em>)
+            <ul>
+                <li>La balise va être cachée, et la page va être affichée comme si la balise n'existait pas</li>
+                <li>modifiez le fichier <code>ex6.css</code> en <em>décommentant</em> <code>display: none</code> à
+                    l'intérieur de la déclaration de classe <code>hidden</code> ; ensuite sauvegardez les changements et
+                    rechargez le fichier <code>ex6.html</code></li>
+            </ul>
+        </li>
+        <li><code>visibility: hidden</code> cache aussi une balise
+            <ul>
+                <li>Cependant, la balise va utiliser le même espace qu'avant</li>
+                <li>la balise sera cachée, mais va continuer d'affecter l'agencement et l'affichage de la page</li>
+                <li>modifiez le fichier <code>ex6.css</code> en commentant <code>display: none</code> et en décommentant
+                    <code>visibility: hidden</code> à l'intérieur de la déclaration de classe <code>hidden</code> ;
+                    ensuite sauvegardez les changements et rechargez le fichier <code>ex6.html</code></li>
+                <li>quoi a changé ?</li>
+            </ul>
+        </li>
+    </ul>
+    <h4><code>display: none</code></h4>
+    <p><img src="intro_css/css_ex6_hidden1.png" alt="CSS Exemple 6"></p>
+    <h4><code>visibility: hidden</code></h4>
+    <p><img src="intro_css/css_ex6_hidden2.png" alt="CSS Exemple 6"></p>
+    <h3>La propriété <code>float</code></h3>
+    <ul>
+        <li><p>La propriété <code>float</code> est utilisée pour positionner et formater du contenu, par exemple pour
+            placer une image à gauche d'un texte placé dans un conteneur</p></li>
+        <li><p>La propriété <code>float</code> peut avoir les valeurs suivantes :</p>
+            <ul>
+                <li><code>left</code>: la balise flotte à gauche de son conteneur</li>
+                <li><code>right</code>: la balise flotte à droite de son conteneur</li>
+                <li><code>none</code>: valeur par défaut ; la balise ne flotte pas, elle est placée où elle apparaît
+                    dans le code HTML
+                </li>
+                <li><code>inherit</code>: la balise hérite de la valeur de <code>float</code> de sa balise parente</li>
+            </ul>
+        </li>
+    </ul>
+    <h4>Exemple: <code>css_float.html</code></h4>
+    <p><img src="intro_css/css_float.png" alt="CSS Exemple 6"></p>
+    <pre>css_float.html</pre>
+
+    <h3>Tableaux CSS</h3>
+    <h4>Exemple: <code>css_table.html</code></h4>
+    <p><img src="intro_css/css_table.png" alt="CSS Table"></p>
+    <p><img src="intro_css/css_table_hover.png" alt="CSS Table"></p>
+    <pre>css_table.html</pre>
+    <ul>
+        <li>La propriété <code>border-collapse</code> détermine si les bordures devraient s'affaisser dans une seule
+            bordure ou non
+            <ul>
+                <li>lui donner la valeur <code>collapse</code> va éviter de laisser une espace entre les bordures de
+                    cellules et de la table
+                </li>
+            </ul>
+        </li>
+        <li>Des styles différents sont appliqués à l'entête de table <code>th</code>, aux données de la table
+            <code>td</code> et à la légende <code>caption</code></li>
+        <li>Pour faciliter la lecture des lignes du tableau, les sélecteurs de <em>pseudo-classes</em> peuvent être
+            utilisés pour appliquer des styles différents, dans cet exemple, aux lignes paires et impaires et aux lignes
+            qui se retrouvent en dessous du curseur de la souris
+            <ul>
+                <li><code>tr:nth-child(even)</code> sélectionne seulement les lignes paires du tableau</li>
+                <li><code>tr:nth-child(odd)</code> sélectionne seulement les lignes impaires du tableau</li>
+                <li><code>tr:hover</code> sélectionne seulement les lignes sous le curseur de la souris</li>
+                <li>dans chaque cas, une couleur de fond différente est appliquée, en plus d'une couleur de texte
+                    différente pour <code>:hover</code></li>
+            </ul>
+        </li>
+    </ul>
+    <h3>Barre de navigation</h3>
+    <h4>Exemple: <code>css_nav.html</code></h4>
+    <p><img src="intro_css/css_nav.png" alt="CSS Exemple 6"></p>
+    <p><img src="intro_css/css_nav_hover.png" alt="CSS Exemple 6"></p>
+    <h3>Barre de navigation = list de liens</h3>
+    <ul>
+        <li><p>Une barre de navigation est d'abord définie dans le document HTML</p></li>
+        <li><p>Dans nos exemples, la barre de navigation est construite à partie d'une liste HTML standard</p></li>
+        <li><p>Une barre de navigation est essentiellement une liste de liens, donc on utilise les balises <code>&lt;ul&gt;</code>
+            et <code>&lt;li&gt;</code> :</p>
+            <ul>
+                <li>le <code>ul</code> a la classe <code>menulist</code></li>
+                <li>le <code>ul</code> est à l'intérieur d'une <code>div</code> avec comme ID <code>menubar</code>
+                    <ul>
+                        <li>on pourrait aussi remplacer la <code>div</code> par <code>navbar</code> si c'est la barre de
+                            navigation principale du site
+                        </li>
+                    </ul>
+                </li>
+                <li>chaque <code>li</code> a la class <code>menuitem</code>, et contient un lien (une balise <code>&lt;a&gt;</code>)
+                </li>
+            </ul>
+        </li>
+        <li><p>À part cette liste, le document HTML ne contient rien de spécial</p>
+            <ul>
+                <li>la <em>magie</em> s'opère dans le fichier CSS</li>
+            </ul>
+        </li>
+    </ul>
+    <pre>css_nav.html</pre>
+    <h4>Fichier <code>css_nav.css</code></h4>
+    <pre>css_nav.css</pre>
+    <h3>Référence</h3>
+    <ul>
+        <li>W3Schools CSS Tutorial: <a href="https://www.w3schools.com/css/css_navbar.asp">https://www.w3schools.com/css/css_navbar.asp</a>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

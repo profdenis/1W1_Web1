@@ -65,3 +65,10 @@ flèches](https://www.w3schools.com/charsets/ref_utf_arrows.asp)
 
 [Référence vers une liste complète des
 symboles](https://www.w3schools.com/charsets/ref_utf_symbols.asp)
+
+
+------------------------------------------------------------------------
+
+Notes écrites par Godefroy Borduas, modifiées par Denis Rinfret.
+
+   
