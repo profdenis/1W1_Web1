@@ -1,0 +1,28 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+}
+
+.grid-container > div {
+    border: 5px dotted dodgerblue;
+    padding: 10px;
+}
+
+.ligne-titre {
+    grid-row-start: 1;
+    grid-column: 1 / 4;
+}
+
+.col-gauche {
+    grid-row: 2 / 4;
+    grid-column-start: 1 ;
+}
+
+.image1 {
+    grid-column: 2 / 4;
+    text-align: center;
+}
+.image1 img {
+    max-width: 100%;
+}

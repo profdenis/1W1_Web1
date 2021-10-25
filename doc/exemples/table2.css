@@ -1,0 +1,13 @@
+table {
+    border-spacing: 10px;
+}
+
+td, th {
+    border: 5px dotted dodgerblue;
+    vertical-align: top;
+    padding: 10px;
+}
+
+.center {
+    text-align: center;
+}
