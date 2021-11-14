@@ -563,7 +563,7 @@ tr:hover {
 
 ![CSS Exemple 6](images/css_nav_hover.png)
 
-### Barre de navigation = list de liens
+### Barre de navigation = liste de liens
 
 - Une barre de navigation est d'abord définie dans le document HTML
 - Dans nos exemples, la barre de navigation est construite à partir d'une 
